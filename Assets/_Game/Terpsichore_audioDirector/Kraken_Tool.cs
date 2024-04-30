@@ -11,6 +11,11 @@ public class SoundSystemData : ScriptableObject
     //Drag your AudioClips intto the playlist
     [SerializeField] private List<AudioClip> _musicSequences;
 
+    [Header("Who will trigger the audio")]
+
+    //Character to trigger audio
+    [SerializeField] private GameObject _player;
+
     public List<AudioClip> Plalist => _musicSequences;
 
 
