@@ -13,22 +13,23 @@ public class SoundSystemData : ScriptableObject
 
     [Header("Who will trigger the audio")]
 
-    //Character to trigger audio
-    [SerializeField] private GameObject _player;
+    //Trigger Box Assigned to
+    [SerializeField] private GameObject _triggerBox;
 
     public List<AudioClip> Plalist => _musicSequences;
 
 
 
-    public AudioClip GetSongFromPlaylist()
+    void OnTriggerEvent(Collider other)
     {
         int randomIndex = Random.Range(0, _musicSequences.Count);
         AudioClip newSong = _musicSequences[0];
         return newSong;
     }
 
-    private void Start()
+    private void Awake()
     {
+
      
     }
 }

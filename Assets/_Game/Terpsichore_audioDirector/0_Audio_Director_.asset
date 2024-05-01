@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: 0_Audio_Director_
   m_EditorClassIdentifier: Assembly-CSharp::SoundSystemData
   _musicSequences: []
+  _player: {fileID: 0}
